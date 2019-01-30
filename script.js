@@ -37,8 +37,6 @@ function saveData(){
 		}
 	}
 
-
-	
 	if(document.getElementById("one").value == ""){
 	alert("Enter something to sava record!!");
 	sessionStorage.removeItem(one);
@@ -52,10 +50,6 @@ function saveData(){
 	document.getElementById("one").value = "";
 	document.getElementById("two").value = "";
 	}
-	
-
-	
-
 }
 
 function deleteData(){
