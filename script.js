@@ -12,27 +12,20 @@ function checkData(){
 		var a = sessionStorage.key(x);
 		var b = sessionStorage.getItem(a);
 		if(one == a && b){
-			alert("Record already exists, Please save another record!!");
+			alert("Record exists in the session storage!!");
 			document.getElementById("one").value = "";
 			document.getElementById("two").value = "";
 		}
-		// else if(one !== a && b){
-		// 	alert("Record not found!!");
-		// 	document.getElementById("one").value = "";
-		// 	document.getElementById("two").value = "";
-		// }
-		// else{
-		// 	alert("Your browser does not support session storage!!");
-		// }
+		else(one !== a && b)
+			alert("Record not found!!");
+			document.getElementById("one").value = "";
+			document.getElementById("two").value = "";
+		
 	}
-	
-	
-	
 }
 
 
 function saveData(){
-
 	var one = document.getElementById("one").value; 
 	for(var x = 0; x<sessionStorage.length; x++){
 		var a = sessionStorage.key(x);
