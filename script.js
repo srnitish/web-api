@@ -14,6 +14,10 @@ function saveData(){
 	display();
 	document.getElementById("one").value = "";
 	document.getElementById("two").value = "";
+
+	if(one === sessionStorage.getItem("key")){
+		alert("Record already submitted!!");
+	}
 }
 
 function deleteData(){
