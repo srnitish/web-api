@@ -22,11 +22,7 @@ function deleteData(){
 		sessionStorage.removeItem(one);
 		display();
 	}
-	for(var x=0; x<sessionStorage.length; x++){
-		var a = sessionStorage.key(x);
-		var b = sessionStorage.getItem(a);
-	}
-	// event.preventdefault();
+
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
 	sessionStorage.removeItem(one,two);
