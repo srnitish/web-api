@@ -6,7 +6,46 @@ function doFirst(){
 	display();
 }
 
+function checkData(){
+	var one = document.getElementById("one").value; 
+	for(var x = 0; x<sessionStorage.length; x++){
+		var a = sessionStorage.key(x);
+		var b = sessionStorage.getItem(a);
+		if(one == a && b){
+			alert("Record already exists, Please save another record!!");
+			document.getElementById("one").value = "";
+			document.getElementById("two").value = "";
+		}
+		// else if(one !== a && b){
+		// 	alert("Record not found!!");
+		// 	document.getElementById("one").value = "";
+		// 	document.getElementById("two").value = "";
+		// }
+		// else{
+		// 	alert("Your browser does not support session storage!!");
+		// }
+	}
+	
+	
+	
+}
+
+
 function saveData(){
+
+	var one = document.getElementById("one").value; 
+	for(var x = 0; x<sessionStorage.length; x++){
+		var a = sessionStorage.key(x);
+		var b = sessionStorage.getItem(a);
+		if(one == a && b){
+			alert("Record already exists, Please save another record!!");
+			document.getElementById("one").value = "";
+			document.getElementById("two").value = "";
+		}
+	}
+
+
+	
 	if(document.getElementById("one").value == ""){
 	alert("Enter something to sava record!!");
 	sessionStorage.removeItem(one);
@@ -15,7 +54,7 @@ function saveData(){
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
 	sessionStorage.setItem(one,two);
-	alert("Record Added Successfully!!")
+	alert("Record Added Successfully!!");
 	display();
 	document.getElementById("one").value = "";
 	document.getElementById("two").value = "";
