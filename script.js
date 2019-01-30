@@ -43,7 +43,7 @@ function display(){
 	for(var x=0; x<sessionStorage.length; x++){
 		var a = sessionStorage.key(x);
 		var b = sessionStorage.getItem(a);
-		rightbox.innerHTML += "Name: " + a + " | Value is: " + b + "<br/>";
+		rightbox.innerHTML += "Name: " + a + " | Value is: " + b + "<br/>" + "<hr/>";
 	}
 	// var two = sessionStorage.getItem(one);
 	// rightbox.innerHTML = "Name of variable: " +one + "<br > Value is: " +two;
