@@ -4,6 +4,7 @@ function doFirst(){
 	button.addEventListener("click", saveData, false);
 	display();
 }
+
 function saveData(){
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
@@ -40,7 +41,7 @@ function deleteData(){
 function display(){
 	var rightbox = document.getElementById("rightbox");
 	rightbox.innerHTML = "";
-	for(var x=0; x<sessionStorage.length; x++){
+	for(var x = 0; x<sessionStorage.length; x++){
 		var a = sessionStorage.key(x);
 		var b = sessionStorage.getItem(a);
 		rightbox.innerHTML += "Name: " + a + " | Value is: " + b + "<br/>" + "<hr/>";
