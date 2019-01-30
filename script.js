@@ -27,6 +27,11 @@ function saveData(){
 }
 
 function deleteData(){
+	if(document.getElementById("one").value == ""){
+		alert("Enter something to delete record!!");
+		sessionStorage.removeItem(one);
+	}
+		
 	if(sessionStorage.key("key") === document.getElementById("one").value) {
 		alert("Match found, record deleting!!");
 		sessionStorage.removeItem(one);
