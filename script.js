@@ -11,17 +11,17 @@ function checkData(){
 	for(var x = 0; x<sessionStorage.length; x++){
 		var a = sessionStorage.key(x);
 		var b = sessionStorage.getItem(a);
-		if(one == a && b){
-			alert("Record exists in the session storage!!");
-			document.getElementById("one").value = "";
-			document.getElementById("two").value = "";
-		}
-		else(one !== a && b)
-			alert("Record not found!!");
-			document.getElementById("one").value = "";
-			document.getElementById("two").value = "";
-		
 	}
+	if(one == a && b){
+		alert("Record exists in the session storage!!");
+		document.getElementById("one").value = "";
+		document.getElementById("two").value = "";
+	}
+	if(one !== a && b){
+		alert("Record not found!!");
+		document.getElementById("one").value = "";
+		document.getElementById("two").value = "";
+	}	
 }
 
 
