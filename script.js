@@ -7,6 +7,11 @@ function doFirst(){
 }
 
 function saveData(){
+	if(document.getElementById("one").value == ""){
+	alert("Enter something to sava record!!");
+	sessionStorage.removeItem(one);
+	}
+	else{
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
 	sessionStorage.setItem(one,two);
@@ -14,10 +19,11 @@ function saveData(){
 	display();
 	document.getElementById("one").value = "";
 	document.getElementById("two").value = "";
-
-	if(one === sessionStorage.getItem("key")){
-		alert("Record already submitted!!");
 	}
+	
+
+	
+
 }
 
 function deleteData(){
