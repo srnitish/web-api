@@ -4,18 +4,15 @@ function doFirst(){
 	button.addEventListener("click", saveData, false);
 	display();
 }
-
 function saveData(){
-
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
 	sessionStorage.setItem(one,two);
 	alert("Record Added!!")
 	display();
 	document.getElementById("one").value = "";
-	document.getElementById("two").value = "";	
-	}
-
+	document.getElementById("two").value = "";
+}
 
 function deleteData(){
 	if(sessionStorage.key("key") === document.getElementById("one").value) {
