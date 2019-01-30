@@ -1,4 +1,5 @@
 // Javascript code
+
 function doFirst(){
 	var button = document.getElementById("button");
 	button.addEventListener("click", saveData, false);
@@ -23,10 +24,7 @@ function deleteData(){
 	}
 	for(var x=0; x<sessionStorage.length; x++){
 		var a = sessionStorage.key(x);
-		var b = sessionStorage.getItem(a);	
-		if(sessionStorage.key(x) != document.getElementById("one").value){
-			alert("Match not found, try to delete matched record!!");
-		}
+		var b = sessionStorage.getItem(a);
 	}
 	// event.preventdefault();
 	var one = document.getElementById("one").value;
