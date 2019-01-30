@@ -19,9 +19,11 @@ function checkData(){
 	}
 	if(one !== a && b){
 		alert("Record not found!!");
-		document.getElementById("one").value = "";
-		document.getElementById("two").value = "";
-	}	
+	}
+	if(document.getElementById("one").value == ""){
+		alert("Enter something to search record!!");
+		sessionStorage.removeItem(one);
+	}
 }
 
 
