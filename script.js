@@ -8,7 +8,7 @@ function saveData(){
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
 	sessionStorage.setItem(one,two);
-	alert("Record Added!!")
+	alert("Record Added Successfully!!")
 	display();
 	document.getElementById("one").value = "";
 	document.getElementById("two").value = "";
