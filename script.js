@@ -95,23 +95,6 @@ function deleteData(){
 		document.getElementById("one").value = "";
 		document.getElementById("two").value = "";
 	}
-
-	
-
-	// if(document.getElementById("one").value == sessionStorage.key("key")) {
-	// 	alert("Match found, record deleting!!");
-	// 	sessionStorage.removeItem("key");
-	// 	display();
-	// }
-
-	
-
-	// if(document.getElementById("one").value != sessionStorage.key("key")){
-	// 	alert("Match does not exist in the session storage!!");
-	// 	document.getElementById("one").value = "";
-	// 	document.getElementById("two").value = "";
-	// 	return one;
-	// }
 		
 	var one = document.getElementById("one").value;
 	var two = document.getElementById("two").value;
