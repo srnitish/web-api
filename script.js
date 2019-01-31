@@ -16,16 +16,21 @@ function checkData(){
 			alert("Record exists in the session storage!!");
 			document.getElementById("one").value = "";
 			document.getElementById("two").value = "";
-		}
-		if(one !== a && b){
-			alert("Record not found!!");
+			return one;
 		}
 	}
+
+	if(one != a && b){
+		alert("Record not found!!");
+		return one;
+	}
+
 	
-	if(document.getElementById("one").value == ""){
-		alert("Enter something to search record!!");
-		// sessionStorage.removeItem(one);
-	}
+	
+	// if(document.getElementById("one").value == ""){
+	// 	alert("Enter something to search record!!");
+	// 	sessionStorage.removeItem(one);
+	// }
 }
 
 
