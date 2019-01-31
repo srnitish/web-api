@@ -1,12 +1,16 @@
 // Javascript code
 
 function doFirst(){
+	
 	var button = document.getElementById("button");
 	button.addEventListener("click", saveData, false);
 	display();
 }
 
 // peice of code to save data
+
+
+
 function saveData(){
 	var one = document.getElementById("one").value; 
 	for(var x = 0; x<localStorage.length; x++){
